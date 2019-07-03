@@ -7,22 +7,125 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Atlantic</title>
   </head>
+
   <body class="site-page">
-    <!-- <include class="sprite visually-hidden" src="build/img/sprite.svg"></include> -->
+    <div class="sprite visually-hidden">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    
+    <input class="slider-inputs slider-input-1 visually-hidden" type="radio" id="product-1" name="slider-toggle" checked>
+    <input class="slider-inputs slider-input-2 visually-hidden" type="radio" id="product-2" name="slider-toggle">
+    <input class="slider-inputs slider-input-3 visually-hidden" type="radio" id="product-3" name="slider-toggle">
 
-    <header class="page-header">
+    <div class="first-screen">
+      <div class="logo-wrapper">
+        <a href="#" class="logo" aria-label="Logo">
+          <svg width="156" height="360" viewBox="0 0 156 360">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+        <a href="#main" class="button-down" aria-label="Site content">К содержимому сайта</a>
+        <div class="decorate-block"></div>
+      </div>
 
-    </header>
+      <div class="header-wrapper">
+        <header class="page-header">
+          <ul class="site-navigation">
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link" aria-label="Каталог">Каталог</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link" aria-label="Каталог">Производство</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link" aria-label="Каталог">Команда</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link" aria-label="Каталог">Отзывы</a>
+            </li>
+            <li class="site-navigation__item">
+              <a href="#" class="site-navigation__link" aria-label="Каталог">Контакты</a>
+            </li>
+          </ul>
+          <form class="search-form" action="#" method="post">
+            <label class="search-form__label">
+              <input class="search-form__input" id="" type="text" aria-label="Поиск по сайту" placeholder="">
+            </label>
+            <!-- <button class="search-form__button" type="submit" aria-label="Поиск">Поиск</button> -->
+          </form>
+        </header>
+  
+        <ul class="products">
+          <li class="products__item products__item--1">
+            <h2 class="products__item-header">
+              Моторные<br> 
+              <b>Масла</b><br> 
+              <small>По новейшим технологиям</small>
+            </h2>
+            <div class="products__inner-wrapper">
+              <a href="#" class="products__link" aria-label="Продукция">
+                <picture>
+                  <source type="image/webp" srcset="img/oil-structure.webp">
+    
+                  <img src="img/oil-structure.jpg" width="365" height="367" alt="Product image">
+                </picture>
+              </a>
+              <h3>Масла</h3>
+            </div>
+          </li>
+          <li class="products__item products__item--2">
+            <h2 class="products__item-header">
+              Технические<br> 
+              <b>Жидкости</b><br> 
+              <small>По новейшим технологиям</small>
+            </h2>
+            <div class="products__inner-wrapper">
+              <a href="#" class="products__link" aria-label="Продукция">
+                <picture>
+                  <source type="image/webp" srcset="img/oil-structure.webp">
+    
+                  <img src="img/oil-structure.jpg" width="365" height="367" alt="Product image">
+                </picture>
+              </a>
+              <h3>2 Масла</h3>
+            </div>
+          </li>
+          <li class="products__item products__item--3">
+            <h2 class="products__item-header">
+              Наша<br> 
+              <b>Продукция</b><br> 
+              <small>По новейшим технологиям</small>
+            </h2>
+            <div class="products__inner-wrapper">
+              <a href="#" class="products__link" aria-label="Продукция">
+                <picture>
+                  <source type="image/webp" srcset="img/oil-structure.webp">
+    
+                  <img src="img/oil-structure.jpg" width="365" height="367" alt="Product image">
+                </picture>
+              </a>
+              <h3>3 Масла</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <main class="container">
-
+      <div class="slider-labels">
+        <label class="slider-label slider-label--1" for="product-1">Первый слайд</label>
+        <label class="slider-label slider-label--2" for="product-2">Второй слайд</label>
+        <label class="slider-label slider-label--3" for="product-3">Третий слайд</label>
+      </div>
+    </div>
+    
+    <main class="container" id="main">
+      
     </main>
 
     <footer class="page-footer">
 
     </footer>
     <script src="js/webp-support.min.js"></script>
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/main-navigation.min.js"></script>
+    <!-- <script src="js/picturefill.min.js"></script>
+    <script src="js/main-navigation.min.js"></script> -->
   </body>
 </html>

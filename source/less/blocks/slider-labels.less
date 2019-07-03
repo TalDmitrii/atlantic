@@ -1,0 +1,62 @@
+.slider-labels {
+  width: 150px;
+
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  bottom: 7vh;
+  left: 53.5vw;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid @color-yellow;
+  }
+}
+
+.slider-label {
+  position: relative;
+  width: 25px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 0;
+
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background-color: @color-white;
+  }
+}
+
+.slider-input-1:checked ~ .first-screen .slider-label--1::after {
+  background-color: @color-yellow;
+}
+
+.slider-input-2:checked ~ .first-screen .slider-label--2::after {
+  background-color: @color-yellow;
+}
+
+.slider-input-3:checked ~ .first-screen .slider-label--3::after {
+  background-color: @color-yellow;
+}
+
+.slider-input-1:focus ~ .first-screen .slider-labels {
+  outline: 1px solid @color-yellow;
+}
+
+.slider-input-2:focus ~ .first-screen .slider-labels {
+  outline: 1px solid @color-yellow;
+}
+
+.slider-input-3:focus ~ .first-screen .slider-labels {
+  outline: 1px solid @color-yellow;
+}

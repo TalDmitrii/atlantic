@@ -1,0 +1,52 @@
+.decorate-block {
+  position: relative;
+  width: 1px;
+  height: 33.33vh;
+  align-self: flex-end;
+
+  margin-top: 25px;
+  margin-right: 11px;
+
+  animation-name: animate-decorate-out;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+
+  background-color: @color-white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    bottom: -33px;
+
+    background-color: @color-white;
+
+    box-shadow: 0 33px 0 0 @color-white,
+                0 66px 0 0 @color-white;
+  }
+}
+
+.button-down:hover ~ .decorate-block,
+.button-down:focus ~ .decorate-block {
+  animation-name: animate-decorate;
+  animation-timing-function: ease-in-out;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate-decorate {
+  100% {
+    transform: translateY(2000px);
+  }
+}
+
+@keyframes animate-decorate-out {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

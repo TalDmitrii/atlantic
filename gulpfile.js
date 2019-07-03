@@ -21,6 +21,7 @@ gulp.task("clean", function () {
 });
 gulp.task("copy", function () {
   return gulp.src([
+    "source/fonts/**",
     "source/img/**",
     "source/js/**"
   ], {

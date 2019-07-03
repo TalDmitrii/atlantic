@@ -1,0 +1,35 @@
+.first-screen {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+
+  transition: background-image 0.3s;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: right;
+}
+
+.slider-input-1:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg.jpg);
+}
+
+.webp .slider-input-1:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg.webp);
+}
+
+.slider-input-2:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg-2.jpg);
+}
+
+.webp .slider-input-2:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg-2.webp);
+}
+
+.slider-input-3:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg-3.jpg);
+}
+
+.webp .slider-input-3:checked ~ .first-screen {
+  background-image: url(../img/first-screen-bg-3.webp);
+}

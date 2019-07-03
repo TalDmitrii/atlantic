@@ -1,0 +1,46 @@
+.site-navigation {
+  width: 60.625vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .list-reset();
+  margin-right: 7.29vw;
+}
+
+.site-navigation__link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+  font-size: 21px;
+  font-weight: 300;
+  color: @color-white;
+  text-decoration: none;
+
+  outline: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 0;
+    bottom: -2px;
+
+    animation-name: button-focus-out;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+
+    background-color: @color-yellow;
+  }
+}
+
+.site-navigation__link:hover,
+.site-navigation__link:focus {
+  &::after {
+    left: 0;
+
+    animation-name: button-focus;
+    animation-duration: 0.3s;
+  }
+}
