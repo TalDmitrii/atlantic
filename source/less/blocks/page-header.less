@@ -1,7 +1,20 @@
 .page-header {
   display: flex;
+  flex-wrap: wrap;
 
   margin-bottom: 17.5vh;
   padding-left: 8vw;
-  padding-right: 4.427vw;
+  padding-right: 3.427vw;
+
+  @media (max-width: @laptop) {
+    padding-left: 4vw;
+  }
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: @desktop) {
+    margin-bottom: 6vh;
+  }
 }

@@ -1,8 +1,17 @@
 .logo-wrapper {
   width: 167px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
 
   overflow: hidden;
+
+  @media (max-width: @desktop) {
+    width: 156px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100px;
+  }
 }

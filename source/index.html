@@ -20,9 +20,10 @@
     <div class="first-screen">
       <div class="logo-wrapper">
         <a href="#" class="logo" aria-label="Logo">
-          <svg width="156" height="360" viewBox="0 0 156 360">
+          <img src="img/logo.jpg" width="156" height="360" alt="Logo">
+          <!-- <svg width="156" height="360" viewBox="0 0 156 360">
             <use xlink:href="#logo"></use>
-          </svg>
+          </svg> -->
         </a>
         <a href="#main" class="button-down" aria-label="Site content">К содержимому сайта</a>
         <div class="decorate-block"></div>
@@ -30,37 +31,42 @@
 
       <div class="header-wrapper">
         <header class="page-header">
-          <ul class="site-navigation">
-            <li class="site-navigation__item">
-              <a href="#" class="site-navigation__link" aria-label="Каталог">Каталог</a>
-            </li>
-            <li class="site-navigation__item">
-              <a href="#" class="site-navigation__link" aria-label="Каталог">Производство</a>
-            </li>
-            <li class="site-navigation__item">
-              <a href="#" class="site-navigation__link" aria-label="Каталог">Команда</a>
-            </li>
-            <li class="site-navigation__item">
-              <a href="#" class="site-navigation__link" aria-label="Каталог">Отзывы</a>
-            </li>
-            <li class="site-navigation__item">
-              <a href="#" class="site-navigation__link" aria-label="Каталог">Контакты</a>
-            </li>
-          </ul>
-          <form class="search-form" action="#" method="post">
-            <label class="search-form__label">
-              <input class="search-form__input" id="" type="text" aria-label="Поиск по сайту" placeholder="">
-            </label>
-            <!-- <button class="search-form__button" type="submit" aria-label="Поиск">Поиск</button> -->
-          </form>
+          <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+            <button class="main-navigation__toggle burger" aria-label="Кнопка переключения меню">
+              <span>Переключить меню</span>
+            </button>
+            <ul class="main-navigation__list site-navigation">
+              <li class="site-navigation__item">
+                <a href="#" class="site-navigation__link" aria-label="Каталог">Каталог</a>
+              </li>
+              <li class="site-navigation__item">
+                <a href="#" class="site-navigation__link" aria-label="Каталог">Производство</a>
+              </li>
+              <li class="site-navigation__item">
+                <a href="#" class="site-navigation__link" aria-label="Каталог">Команда</a>
+              </li>
+              <li class="site-navigation__item">
+                <a href="#" class="site-navigation__link" aria-label="Каталог">Отзывы</a>
+              </li>
+              <li class="site-navigation__item">
+                <a href="#" class="site-navigation__link" aria-label="Каталог">Контакты</a>
+              </li>
+            </ul>
+            <form class="search-form" action="#" method="post">
+              <label class="search-form__label">
+                <input class="search-form__input" id="" type="text" aria-label="Поиск по сайту" placeholder="">
+              </label>
+            </form>
+            <div class="main-navigation__overlay"></div>
+          </nav>
         </header>
   
         <ul class="products">
           <li class="products__item products__item--1">
             <h2 class="products__item-header">
-              Моторные<br> 
-              <b>Масла</b><br> 
-              <small>По новейшим технологиям</small>
+              <span class="products__header">Моторные</span><br> 
+              <span class="products__header-big">Масла</span><br> 
+              <span class="products__header-small">По новейшим технологиям</span>
             </h2>
             <div class="products__inner-wrapper">
               <a href="#" class="products__link" aria-label="Продукция">
@@ -75,9 +81,9 @@
           </li>
           <li class="products__item products__item--2">
             <h2 class="products__item-header">
-              Технические<br> 
-              <b>Жидкости</b><br> 
-              <small>По новейшим технологиям</small>
+              <span class="products__header">Технические</span><br> 
+              <span class="products__header-big">Жидкости</span><br> 
+              <span class="products__header-small">По новейшим технологиям</span>
             </h2>
             <div class="products__inner-wrapper">
               <a href="#" class="products__link" aria-label="Продукция">
@@ -87,14 +93,14 @@
                   <img src="img/oil-structure.jpg" width="365" height="367" alt="Product image">
                 </picture>
               </a>
-              <h3>2 Масла</h3>
+              <h3>Жидкости</h3>
             </div>
           </li>
           <li class="products__item products__item--3">
             <h2 class="products__item-header">
-              Наша<br> 
-              <b>Продукция</b><br> 
-              <small>По новейшим технологиям</small>
+              <span class="products__header">Наша</span><br> 
+              <span class="products__header-big">Продукция</span><br> 
+              <span class="products__header-small">По новейшим технологиям</span>
             </h2>
             <div class="products__inner-wrapper">
               <a href="#" class="products__link" aria-label="Продукция">
@@ -104,7 +110,7 @@
                   <img src="img/oil-structure.jpg" width="365" height="367" alt="Product image">
                 </picture>
               </a>
-              <h3>3 Масла</h3>
+              <h3>Продукция</h3>
             </div>
           </li>
         </ul>
@@ -125,7 +131,7 @@
 
     </footer>
     <script src="js/webp-support.min.js"></script>
-    <!-- <script src="js/picturefill.min.js"></script>
-    <script src="js/main-navigation.min.js"></script> -->
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/main-navigation.min.js"></script>
   </body>
 </html>

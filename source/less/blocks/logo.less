@@ -1,8 +1,17 @@
 .logo {
-  outline: none;
+  @media (min-width: @desktop + 1px) {
+    outline: none;
 
-  &:hover svg,
-  &:focus svg {
-    box-shadow: 0 0 5px 5px @color-yellow;
+    &:hover img,
+    &:focus img {
+      box-shadow: 0 0 5px 5px @color-yellow;
+    }
+  }
+
+  @media (max-width: 600px) {
+    & img {
+      width: 100px;
+      height: 231px;
+    }
   }
 }

@@ -2,12 +2,51 @@
   position: relative;
   display: flex;
   min-height: 100vh;
+  align-items: stretch;
+
+  padding-bottom: 6vh;
 
   transition: background-image 0.3s;
 
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 66.25vw 100%;
   background-position-x: right;
+
+  @media (max-width: @laptop) {
+    background-size: 70.25vw 100%;
+  }
+
+  @media (max-width: @desktop) {
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 365px;
+    height: 1px;
+    bottom: 8.66vh;
+    right: 0;
+
+    background-color: @color-white;
+
+    @media (max-width: @laptop) {
+      width: 265px;
+    }
+
+    @media (max-width: @tablet) {
+      width: 34.5vw;
+    }
+
+    @media (max-width: 440px) {
+      display: none;
+    }
+  }
 }
 
 .slider-input-1:checked ~ .first-screen {

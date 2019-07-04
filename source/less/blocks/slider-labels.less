@@ -7,17 +7,29 @@
   justify-content: space-around;
   bottom: 7vh;
   left: 53.5vw;
+  z-index: 499;
+
+  border-radius: 15px;
 
   &:hover,
   &:focus {
-    outline: 1px solid @color-yellow;
+    box-shadow: 0 0 0 2px @color-yellow;
+  }
+
+  @media (max-width: @desktop) {
+    left: 40vw;
+  }
+
+  @media (max-width: 440px) {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .slider-label {
   position: relative;
   width: 25px;
-  height: 30px;
+  height: 3.33vh;
   display: inline-block;
   vertical-align: middle;
 
@@ -50,13 +62,13 @@
 }
 
 .slider-input-1:focus ~ .first-screen .slider-labels {
-  outline: 1px solid @color-yellow;
+  box-shadow: 0 0 0 2px @color-yellow;
 }
 
 .slider-input-2:focus ~ .first-screen .slider-labels {
-  outline: 1px solid @color-yellow;
+  box-shadow: 0 0 0 2px @color-yellow;
 }
 
 .slider-input-3:focus ~ .first-screen .slider-labels {
-  outline: 1px solid @color-yellow;
+  box-shadow: 0 0 0 2px @color-yellow;
 }
